@@ -674,9 +674,6 @@ $.ajax({
   data: {
     result: value
   },
-  headers: {
-    Authorization: 'Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-  },
   dataType: 'json',
   success(res) {
     console.log(res)
@@ -723,9 +720,6 @@ $.ajax({
   url: 'http://localhost:23000/user/checknick',
   data: {
     result: value
-  },
-  headers: {
-    Authorization: 'Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
   },
   dataType: 'json',
   success(res) {
