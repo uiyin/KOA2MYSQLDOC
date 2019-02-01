@@ -1013,6 +1013,52 @@ $.ajax({
   }
 })
 ```
+### 15.查询用户名输入是否唯一
+
+**(i)请求:POST**
+
+**(ii)参数**
+
+```json
+{
+  //用户输入的昵称
+  "result": value
+}
+```
+
+**(iii)接口地址**
+
+```
+http://localhost:23000/user/checkusername
+
+<!--冒号后面表示端口号，请对照app.js里面的端口号-->
+```
+
+**(iv)返回数据的格式**
+
+```json
+{
+  "code": 200,
+  //total 要是1就表示注册过，0就表示没有注册过
+  "total": 0
+}
+```
+
+**(v)完整 DEMO**
+
+```javascript
+$.ajax({
+  type: 'POST',
+  url: 'http://localhost:23000/user/checkusername',
+  data: {
+    result: value
+  },
+  dataType: 'json',
+  success(res) {
+    console.log(res)
+  }
+})
+```
 
 ## 资金模块
 
