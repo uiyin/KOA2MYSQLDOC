@@ -184,7 +184,9 @@ http://localhost:23000/user/signup
   // token
   token: "Bearer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
   //用户级别
-  level: 2
+  level: 2,
+  //用户昵称
+  nick:"张三"
 }
 //因为用了JWT令牌环所以注册成功后它会给你返回一个token
 //请每次发送请求的时候带上具体的后面会有具体说明
